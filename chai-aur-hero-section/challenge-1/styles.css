@@ -13,37 +13,101 @@ body {
 }
 
 .hero {
+  min-height: 100vh;
+  /* padding: 2rem; */
+  background: linear-gradient(
+		180deg,
+		#150F1F 50%,
+		transparent 100%
+	);
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+	align-items: center;
+  gap: 2rem;
+  
 }
 
+
 .announcement {
+  text-align: center;
 }
 
 .announcement-link {
-  /*  */
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(231, 255, 253, 0.1);
+  border-radius: 20px;
+  font-weight: 400;
+  padding: 10px;
+
 }
 
 .announcement-link:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
+/* New features text */
 .announcement-text {
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
 }
 
+/* svg icon */
 .announcement-button {
+  align-items: center;
+  text-decoration: none;
+  background: rgba(231, 255, 253, 0.1);
+  padding: 5px 15px;
+  border-radius: 20px;
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .hero-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  width: 70%;
+  line-height: normal;
 }
 
 .hero-description {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0 20px 0;
+  text-align: center;
+  width: 500px;
+
 }
 
+/* Get started button */
 .cta-button {
+  border: 20px;
+  display: flex;
+	gap: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(
+		180deg,
+		#4454EC 0%,
+		#6F3FEB 100%
+	);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
 }
 
 .cta-button:hover {
+  box-shadow: 0 0 10px 2px rgba(68, 85, 236, 0.6); 
 }
 
 @media (max-width: 640px) {
